@@ -19,13 +19,27 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Module Name:</string>
+			<string>Remote Value Name:</string>
 			<key>Description</key>
-			<string>The name of the Module</string>
+			<string>The name of the remote value.</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>Module Name</string>
+			<string>RemoteValue</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>keyName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Remote Key Name:</string>
+			<key>Description</key>
+			<string>The name of the remote key.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>remoteKey</string>
 		</dict>
 	</array>
 </dict>
