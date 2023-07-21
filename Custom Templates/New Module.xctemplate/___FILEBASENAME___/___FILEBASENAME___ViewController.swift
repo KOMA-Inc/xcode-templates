@@ -31,7 +31,7 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
 
     var presenter: ___VARIABLE_productName:identifier___Presenter!
 
-    // MARK: - Lifycycle
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
 
 extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewProtocol {
 
-    func apply(_ viewState: ___VARIABLE_productName:identifier___ViewController.ViewState) {
+    func apply(_ viewState: ViewState) {
 
     }
 }
