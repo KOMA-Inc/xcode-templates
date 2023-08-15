@@ -30,8 +30,8 @@ private extension ___VARIABLE_productName:identifier___Presenter {
     func bind() {
         view.viewDidLoadPublisher
             .sink { [unowned self] in
-                self.bindOnLoad()
-                self.viewDidLoad()
+                bindOnLoad()
+                viewDidLoad()
             }
             .store(in: &bag)
     }
