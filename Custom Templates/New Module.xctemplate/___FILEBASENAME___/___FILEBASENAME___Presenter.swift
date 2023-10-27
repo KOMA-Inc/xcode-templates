@@ -1,13 +1,14 @@
-import Combine
 import CombinePlus
+import Depin
 
 class ___VARIABLE_productName:identifier___Presenter {
 
     // MARK: - Injected properties
 
+    @Injected private var factory: ___VARIABLE_productName:identifier___ViewStateFactory
+
     private let coordinator: ___VARIABLE_productName:identifier___CoordinatorProtocol
     private unowned let view: ___VARIABLE_productName:identifier___ViewProtocol
-    private let factory: ___VARIABLE_productName:identifier___ViewStateFactory
 
     // MARK: - Private properties
 
@@ -15,12 +16,10 @@ class ___VARIABLE_productName:identifier___Presenter {
 
     init(
         coordinator: ___VARIABLE_productName:identifier___CoordinatorProtocol,
-        view: ___VARIABLE_productName:identifier___ViewProtocol,
-        factory: ___VARIABLE_productName:identifier___ViewStateFactory
+        view: ___VARIABLE_productName:identifier___ViewProtocol
     ) {
         self.coordinator = coordinator
         self.view = view
-        self.factory = factory
 
         bind()
     }

@@ -5,8 +5,7 @@ import UIKit
 //    rootNavigationController: UINavigationController
 //) -> ___VARIABLE_productName:identifier___Coordinator {
 //    .init(
-//        rootNavigationController: rootNavigationController,
-//        configurator: configurator
+//        rootNavigationController: rootNavigationController
 //    )
 //}
 
@@ -19,26 +18,22 @@ class ___VARIABLE_productName:identifier___Coordinator {
     // MARK: - Injected properties
 
     private unowned let rootNavigationController: UINavigationController
-    private let configurator: AppConfigurator
 
     // MARK: - Private properties
 
-
+    // Empty for now
 
     init(
-        rootNavigationController: UINavigationController,
-        configurator: AppConfigurator
+        rootNavigationController: UINavigationController
     ) {
         self.rootNavigationController = rootNavigationController
-        self.configurator = configurator
     }
 
     func start(animated: Bool) {
         let viewController = ___VARIABLE_productName:identifier___ViewController()
         let presenter = ___VARIABLE_productName:identifier___Presenter(
             coordinator: self,
-            view: viewController,
-            factory: .init(i18n: configurator.i18n)
+            view: viewController
         )
         viewController.presenter = presenter
         viewController.modalPresentationStyle = .overCurrentContext

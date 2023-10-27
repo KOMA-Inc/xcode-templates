@@ -26,4 +26,3 @@ class ___VARIABLE_productName:identifier___Provider {
         ___VARIABLE_keyName:identifier___Value == .enabled
     }
 }
-

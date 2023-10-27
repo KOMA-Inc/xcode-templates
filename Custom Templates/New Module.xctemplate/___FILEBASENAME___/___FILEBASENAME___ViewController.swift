@@ -1,6 +1,4 @@
-import Combine
 import CombinePlus
-import UIKit
 import UIKitPlus
 
 protocol ___VARIABLE_productName:identifier___ViewProtocol: BaseViewProtocol {
@@ -21,11 +19,11 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
 
     // MARK: - IBOutlets
 
-
+    // Empty for now
 
     // MARK: - Private properties
 
-
+    // Empty for now
 
     // MARK: - Public properties
 
