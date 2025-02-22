@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>asyncseq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct &lt;#Sequence#&gt;&lt;Base: AsyncSequence&gt;: AsyncSequence where Base.Element == &lt;#Type#&gt; {
+
+    typealias Element = &lt;#Element#&gt;
+
+    let base: Base
+
+    struct AsyncIterator: AsyncIteratorProtocol {
+
+        var base: Base.AsyncIterator
+
+        mutating func next() async throws -&gt; Element? {
+
+        }
+    }
+
+    func makeAsyncIterator() -&gt; AsyncIterator {
+        AsyncIterator(base: base.makeAsyncIterator())
+    }
+}
+
+extension AsyncSequence where Element == &lt;#Element#&gt; {
+
+    var &lt;#sequence#&gt;: &lt;#Sequence#&gt;&lt;Self&gt; {
+        &lt;#Sequence#&gt;(base: self)
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BE46C7BC-3126-4CF2-9074-28612157B816</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>AsyncSequence</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
