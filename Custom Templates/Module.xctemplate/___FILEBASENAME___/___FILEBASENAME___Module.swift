@@ -1,4 +1,4 @@
-import UIKit
+import SwiftUIExt
 
 struct ___VARIABLE_productName:identifier___Module: Module {
 
