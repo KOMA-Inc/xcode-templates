@@ -1,7 +1,7 @@
 import Combine
 import Depin
 
-@MainActor 
+@MainActor
 class ___VARIABLE_productName:identifier___ViewModel: ObservableObject {
 
     // MARK: - Injected properties
